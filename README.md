@@ -3,7 +3,7 @@
     Dasheng (大声)
     </h1>
     <p>
-    Official PyTorch code for <b>D</b>eep <b>A</b>udio-<b>S</b>ignal <b>H</b>olistic <b>E<\b>mbeddi<b>ng<\b>s <br>
+    Official PyTorch code for <b>D</b>eep <b>A</b>udio-<b>S</b>ignal <b>H</b>olistic <b>E</b>b>mbeddi<b>ng</b>b>s <br>
     <b><em>Scaling up masked audio encoder learning for general audio classification</em></b>
     </p>
     </p>
