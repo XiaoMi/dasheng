@@ -56,7 +56,7 @@ Models with their linear evaluation results on the [HEAR benchmark](https://hear
 | [Wav2vec-large-100k-voxpopuli](https://huggingface.co/facebook/wav2vec2-large-100k-voxpopuli) | 300 | 62.5 | 63.6 | 69.5 |
 | [Data2Vec-Audio-Large](https://huggingface.co/facebook/data2vec-audio-large) | 300 |41.1 |  60.5 | 55.0 |
 
-<img src="metadata/hear_capabilities.png" alt="Hear capabiltiies" style="width: 200px; height: 200px;">
+<img src="metadata/hear_capabilities.png" alt="Hear capabiltiies" style="width: 600px; height: 600px;">
 
 ## K-Nearest Neighbor results
 
