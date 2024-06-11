@@ -1,0 +1,81 @@
+[project]
+name = 'dasheng'
+version = '0.0.2'
+dependencies = [
+    "einops",
+    "numpy",
+    "pytorch_ignite",
+    "torch",
+    "torchaudio",
+]
+authors = [
+  {name = "Heinrich Dinkel", email = "dinkelheinrich@xiaomi.com"},
+  {name = "Junbo Zhang", email = "zhangjunbo1@xiaomi.com"},
+]
+maintainers = [
+  {name = "Heinrich Dinkel", email = "dinkelheinrich@xiaomi.com"},
+  {name = "Junbo Zhang", email = "zhangjunbo1@xiaomi.com"},
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+
+  # Indicate who your project is intended for
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+
+  # Pick your license as you wish (see also "license" above)
+  "License :: OSI Approved :: MIT License",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Environment :: GPU :: NVIDIA CUDA :: 11.4",
+  "Environment :: GPU :: NVIDIA CUDA :: 12",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/Richermans/dasheng"
+Documentation = "https://github.com/Richermans/dasheng"
+Repository = "https://github.com/Richermans/dasheng"
+Issues = "https://github.com/Richermans/dasheng/issues"
+
+[tool.poetry]
+description = {file = 'README.md', format = 'markdown'}
+authors = ['Heinrich Dinkel dinkelheinrich@xiaomi.com']
+readme = 'README.md'
+requires-python = '>=3.9'
+
+[tool.setuptools.packages.find]
+where = ['.']
+
+[project.scripts]
+wavlist_to_tar = "dasheng.prepare.wavlist_to_tar:main"
+
+[project.optional-dependencies]
+train = [
+    'accelerate>=0.28.0',
+    'bitsandbytes>=0.35.4',
+    'webdataset>=0.2.86',
+    'braceexpand>=0.1.7',
+    'fire>=0.5.0',
+    'loguru>=0.7.2',
+    'numpy>=1.24.1',
+    'pytorch_ignite>=0.4.13',
+    'PyYAML>=6.0.1',
+    'torch>=2.1.1',
+    'torchaudio>=2.1.1',
+    'tqdm>=4.66.1',
+    'pandas>=2.0',
+]
+all = [
+    "dasheng[train]"
+]

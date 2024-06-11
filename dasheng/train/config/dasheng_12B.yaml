@@ -1,0 +1,26 @@
+outputpath: experiments
+num_workers: 16
+batch_size: 256
+train_data: 
+  - acav100M/shards/acav_100M_split{1..1824}_0000000.tar
+  - audioset/full/shards/full_train_16k_filenames_0000{000..190}.tar
+  - vggsound/train/shards/train_dev_audio_00000{00..17}.tar
+  - Jamendo/train/shards/audio_30s_16k_0000{000..055}.tar
+cv_data: 
+ - vggsound/test/shards/test_audio_00000{00..14}.tar
+chunk_length: 10.0
+epochs: 100
+epoch_length: 15000
+decay_frac: 0.1
+mask_ratio: 0.75
+warmup_epochs: 3
+warmup_iters: null
+model: dasheng_12B
+model_args:
+  target_length: 1008 #frames
+  group_masking: True
+optimizer: AdamW8bit
+optimizer_args:
+  lr: 0.0003
+  weight_decay: 0.01
+
