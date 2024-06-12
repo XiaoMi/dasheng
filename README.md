@@ -22,7 +22,7 @@ python3 -c "from dasheng import dasheng_base; import torch; model = dasheng_base
 ```
 
 
-This repo provides checkpoints for the Interspeech 2024 paper `Scaling up masked audio encoder learning for general audio classification`.
+This repo provides checkpoints for the Interspeech 2024 paper [Scaling up masked audio encoder learning for general audio classification](https://arxiv.org/abs/2406.06992).
 The goal of this work is to investigate the scalability of masked autoencoders for audio.
 Prior work did not scale beyond 10,000 hours of audio, while Dasheng used 272,000 hours of training data.
 
