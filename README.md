@@ -7,7 +7,7 @@
     <b><em>Scaling up masked audio encoder learning for general audio classification</em></b>
     </p>
     </p>
-    <a href="https://arxiv.org/abs/2406.xxxxx"><img src="https://img.shields.io/badge/arXiv-2406.xxxxx-b31b1b" alt="version"></a>
+    <a href="https://arxiv.org/abs/2406.06992"><img src="https://img.shields.io/badge/arXiv-2406.06992-b31b1b" alt="version"></a>
     <a href="https://github.com/richermans/dasheng"><img src="https://img.shields.io/badge/Platform-linux-lightgrey" alt="version"></a>
     <a href="https://www.python.org"><img src="https://img.shields.io/badge/Python-3.8+-orange" alt="version"></a>
     <a href="https://pytorch.org"><img src="https://img.shields.io/badge/PyTorch-1.13+-brightgreen" alt="python"></a>
