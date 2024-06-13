@@ -43,7 +43,7 @@ Please see [here](https://huggingface.co/mispeech/dasheng-base) for usage instru
 
 Dasheng models have been trained on 272k hours of general audio, mainly [VGGSound](https://www.robots.ox.ac.uk/~vgg/data/vggsound/), [Audioset](https://research.google.com/audioset/), [MTG-Jamendo](https://mtg.github.io/mtg-jamendo-dataset/) and [ACAV100M](https://acav100m.github.io/).
 
-Models with their linear evaluation results on the [HEAR benchmark](https://hearbenchmark.com/), averaged across different domains.
+Models with their evaluation results on the [HEAR benchmark](https://hearbenchmark.com/), averaged across different domains.
 
 | Model | Parameters (M) | Environment Sounds | Speech  | Music |
 |------|-------|-------|-------| ------ |
