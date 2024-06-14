@@ -17,7 +17,7 @@
 # TL;DR
 
 ```bash
-pyton3 -m pip install dasheng
+python3 -m pip install dasheng
 python3 -c "from dasheng import dasheng_base; import torch; model = dasheng_base().eval(); features=model(torch.randn(1, 16000))"
 ```
 
