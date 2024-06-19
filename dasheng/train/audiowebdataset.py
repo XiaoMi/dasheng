@@ -59,6 +59,7 @@ class Audiowebdataset_Fluid(wds.DataPipeline):
                  batch_size: Optional[int] = None,
                  add_gain: bool = False,
                  drop_crops: bool = False,
+                 with_json: bool = False,
 
                  ):
         pipeline: List = [
@@ -85,7 +86,7 @@ class Audiowebdataset_Fluid(wds.DataPipeline):
             pipeline.extend([wds.split_by_worker, wds.tarfile_to_samples()])
         pipeline.extend([
             wds.decode(wds.torch_audio, handler=wds.warn_and_continue),
-            wds.to_tuple("mp3;wav;flac", "__key__"),
+            wds.to_tuple("mp3;wav;flac", "json", "__key__") if with_json else wds.to_tuple("mp3;wav;flac", "__key__"),
             partial(_seq_crop, crop_size=crop_size, drop_crops = drop_crops)
         ])
         if add_gain:
