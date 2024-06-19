@@ -59,7 +59,7 @@ class Audiowebdataset_Fluid(wds.DataPipeline):
                  batch_size: Optional[int] = None,
                  add_gain: bool = False,
                  drop_crops: bool = False,
-                 with_json = False,
+                 with_json: bool = False,
 
                  ):
         pipeline: List = [
