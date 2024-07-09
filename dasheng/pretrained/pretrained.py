@@ -71,7 +71,7 @@ class Dasheng(AudioTransformerMAE_Encoder):
             cls, pretrained_url: str,
             **additional_model_kwargs) -> AudioTransformerMAE_Encoder:
         """
-        Class method to create a new Vocos model instance from a pre-trained model stored in the Hugging Face model hub.
+        Class method to create a new Dasheng model instance from a pre-trained model stored in the Hugging Face model hub.
         """
         if 'http' in pretrained_url:
             dump = torch.hub.load_state_dict_from_url(pretrained_url,
