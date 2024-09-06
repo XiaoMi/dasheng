@@ -134,7 +134,7 @@ wavlist_to_tar your_data.tsv shards/
 Creating `your_data.tsv` is simple:
 
 ```bash
-find data -type f  | awk 'BEGIN{"filename"}{print}' > your_data.tsv
+find data -type f  | awk 'BEGIN{print "filename"} {print}' > your_data.tsv
 ```
 
 ### 3.2 Training from source
