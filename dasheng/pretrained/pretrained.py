@@ -43,8 +43,9 @@ class Dasheng(AudioTransformerMAE_Encoder):
                                   device=x.device)
                 pad[..., :splits[-1].shape[-1]] = splits[-1]
                 padding_start_in_chunks = splits[-1].shape[-1] // self.patch_stride[-1]
-                splits = torch.stack((*splits[:-1], pad), dim=0)
+                splits = (*splits[:-1], pad)
             n_splits = len(splits)
+            splits = torch.stack(splits, dim=0)
             # Splits into the batch_size, speeds up computation
             x = rearrange(splits, 'spl b c f t-> (spl b) c f t')
             x = self.forward_features(x)
